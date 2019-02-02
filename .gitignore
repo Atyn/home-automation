@@ -6,6 +6,8 @@ yarn-debug.log*
 yarn-error.log*
 tradfri-config.json
 hue-config.json
+tmp
+logs
 
 # Runtime data
 pids
