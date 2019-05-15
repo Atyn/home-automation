@@ -1,0 +1,14 @@
+[Unit]
+Description=home automation service
+After=network.target
+
+[Service]
+Type=simple
+User=home-automation
+Group=home-automation
+Restart=on-failure
+
+ExecStart=/usr/nanodano/my_daemon --option=123
+
+[Install]
+WantedBy=multi-user.target
