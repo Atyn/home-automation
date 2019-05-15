@@ -8,6 +8,7 @@ tradfri-config.json
 hue-config.json
 tmp
 logs
+dist
 
 # Runtime data
 pids
