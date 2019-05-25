@@ -6,7 +6,20 @@ import HueConfig from '../hue-config.json'
 const tradfriController = new TradfriController(TradfriConfig)
 const hueListener = new HueListener(HueConfig)
 
-hueListener.subscribeToButtonEvent(onButtonEvent)
+process.on('uncaughtException', (error) => {
+	console.error(error)
+	process.exit(1)		
+})
+
+main()
+async function main() {
+	try {
+		await hueListener.subscribeToButtonEvent(onButtonEvent)
+	} catch (error) {
+		console.error(error)
+		process.exit(1)		
+	}
+}
 
 async function onButtonEvent(buttonEvent) {
 	switch (buttonEvent) {
