@@ -23,7 +23,7 @@
 		"babel-eslint": "^10.0.1",
 		"eslint": "^5.12.1",
 		"prompt": "^1.0.0",
-		"webpack": "^4.31.0",
-		"webpack-cli": "^3.3.2"
+		"webpack": "^5.75.0",
+		"webpack-cli": "^5.0.1"
 	}
 }
